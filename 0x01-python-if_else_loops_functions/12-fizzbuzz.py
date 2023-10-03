@@ -6,4 +6,4 @@ def fizzbuzz():
         if n % 5 == 0:
             print("Buzz", end=" ")
         if n % 3 and n % 5:
-            print("FizzBuzz", end=" ")
+            print(n, end=" ")
