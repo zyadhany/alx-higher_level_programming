@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    for n in range(1, 100):
+    for n in range(1, 101):
         if n % 3 == 0:
-            print("Fizz", end=" ")
+            print("Fizz", end="")
         if n % 5 == 0:
-            print("Buzz", end=" ")
+            print("Buzz", end="")
         if n % 3 and n % 5:
-            print(n, end=" ")
+            print(n, end="")
+        print("",end=" ")
