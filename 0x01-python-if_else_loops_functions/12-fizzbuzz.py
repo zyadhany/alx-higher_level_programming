@@ -7,4 +7,4 @@ def fizzbuzz():
             print("Buzz", end="")
         if n % 3 and n % 5:
             print(n, end="")
-        print("",end=" ")
+        print("", end=" ")
