@@ -4,7 +4,7 @@
  * insert_node - insert number in sorted linked list.
  * @head: start of list.
  * @number: number to insert.
- * 
+ *
  * Return: If the function fails - NULL.
  *         Otherwise - a pointer to the new node.
  */
@@ -14,7 +14,7 @@ listint_t *insert_node(listint_t **head, int number)
 
 	if (!head)
 		return (NULL);
-	
+
 	tmp = malloc(sizeof(listint_t));
 
 	if (!tmp)
@@ -36,7 +36,7 @@ listint_t *insert_node(listint_t **head, int number)
 	{
 		if (at->n >= number)
 			break;
-	
+
 		prev = at;
 		at = at->next;
 	}
