@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def multiple_returns(sentence = ""):
+def multiple_returns(sentence=""):
     n = len(sentence)
     c = None
     if n:
