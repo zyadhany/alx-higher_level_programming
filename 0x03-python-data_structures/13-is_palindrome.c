@@ -49,25 +49,18 @@ int lits_len(listint_t *head)
  */
 int is_palindrome(listint_t **head)
 {
-	int n = 0, at = 0, X[1000];
+	int n, at = 0;
 	listint_t *tmp;
 
 	if (!head)
 		return (1);
 
 	tmp = *head;
+	n = lits_len(*head);
 
 	while (tmp)
 	{
-		X[n] = tmp->n;
-		n++;
-		tmp = tmp->next;
-	}
-	
-	tmp = *head;
-	while (tmp)
-	{
-		if (tmp->n != X[n - at - 1])
+		if (tmp->n != get_pos(*head, n - at - 1))
 			return (0);
 
 		at++;
