@@ -14,3 +14,4 @@ def square_matrix_simple(matrix=None):
             new_matrix[i][j] *= new_matrix[i][j]
     
     return new_matrix
+
