@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-print_sorted_dictionary = __import__('6-print_sorted_dictionary').print_sorted_dictionary
-
-a_dictionary = { 'language': "C", 'Number': 89, 'track': "Low level", 'ids': [1, 2, 3] }
-print_sorted_dictionary(a_dictionary)
+def print_sorted_dictionary(a_dictionary):
+    X = list(a_dictionary.keys())
+    X.sort()
+    for m in X:
+        print("{} : {}".format(m, a_dictionary[m]))
