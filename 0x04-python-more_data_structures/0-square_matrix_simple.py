@@ -12,6 +12,5 @@ def square_matrix_simple(matrix=None):
     for i in range(n):
         for j in range(m):
             new_matrix[i][j] *= new_matrix[i][j]
-    
-    return new_matrix
 
+    return new_matrix
