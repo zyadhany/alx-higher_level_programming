@@ -45,7 +45,7 @@ class SinglyLinkedList:
     def __init__(self):
         """ new list """
         self.__head = None
-    
+
     def sorted_insert(self, value):
         """insert new node"""
         node = Node(value)
@@ -79,4 +79,3 @@ class SinglyLinkedList:
                 s += "\n"
             tmp = tmp.next_node
         return (s)
-                
