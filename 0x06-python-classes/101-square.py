@@ -58,10 +58,10 @@ class Square:
     def __str__(self):
         """print square"""
         if not self.__size:
-            print("\n")
+            print("")
             return
         s = "\n" * self.__position[1]
         for i in range(self.__size):
             s += " " * self.__position[0]
             s += "#" * self.__size + "\n"
-        return (s)
+        return (s[:-1])
