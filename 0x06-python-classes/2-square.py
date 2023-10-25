@@ -6,7 +6,7 @@
 class Square:
     """square."""
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         """ new squareppyc """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
