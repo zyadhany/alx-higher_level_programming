@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-node = __import__('100-singly_linked_list').Node
+Square = __import__('101-square').Square
 
-sll = node(3)
+my_square = Square(5, (0, 0))
+print(my_square)
 
+print("--")
 
-print(sll)
+my_square = Square(5, (4, 1))
+print(my_square)
