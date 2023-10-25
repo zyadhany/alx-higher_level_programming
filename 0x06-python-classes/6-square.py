@@ -6,12 +6,10 @@
 class Square:
     """square."""
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """ new square """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
+
+        self.position = position
         self.size = size
 
     @property
@@ -49,10 +47,10 @@ class Square:
 
     def my_print(self):
         """print square"""
-        if not self.size:
+        if not self.__size:
             print("")
             return
-        print("\n"* self.position[1], end="")
-        for i in range(self.size):
-            print(" " * self.position[0], end="")
-            print("#" * self.size)
+        print("\n" * self.__position[1], end="")
+        for i in range(self.__size):
+            print(" " * self.__position[0], end="")
+            print("#" * self.__size)
