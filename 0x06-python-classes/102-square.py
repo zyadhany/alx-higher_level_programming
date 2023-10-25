@@ -64,7 +64,7 @@ class Square:
             s += " " * self.__position[0]
             s += "#" * self.__size + "\n"
         return (s[:-1])
-    
+
     def __eq__(self, sec):
         """=="""
         return self.area() == sec.area()
