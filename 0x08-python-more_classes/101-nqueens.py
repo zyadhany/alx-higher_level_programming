@@ -18,7 +18,7 @@ def req(board=[], at=0, n=0, k=0):
         print(board)
         return
 
-    if at == n * n:
+    if at == n * n or k < at // n:
         return
 
     if (isposible(board, at // n, at % n)):
