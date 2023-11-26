@@ -12,6 +12,6 @@ class Student:
         self.age = age
 
 
-def to_json(obj):
+def to_json(self):
     """Documentation of function"""
-    return obj.__dict__
+    return self.__dict__
