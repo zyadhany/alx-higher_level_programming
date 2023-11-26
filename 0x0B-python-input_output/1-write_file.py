@@ -7,4 +7,4 @@ def write_file(filename="", text=""):
     """Documentation of function"""
 
     with open(filename, "w", encoding="utf-8") as fn:
-        fn.write(text)
+        return fn.write(text)
