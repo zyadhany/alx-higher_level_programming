@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-import json
-
-
 """Documentation of file"""
+
+
+import json
 
 
 def from_json_string(my_str):
