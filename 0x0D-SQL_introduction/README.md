@@ -1,2 +1,1 @@
--- Get all DB of server.
-SHOW DATABASES;
+First SQL
