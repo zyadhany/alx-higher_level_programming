@@ -1,2 +1,2 @@
 -- Get all DB of server.
-SHOW CREATE TABLE `first_table`;
+SELECT score, name FROM second_table WHERE name != "" ORDER BY score DESC
