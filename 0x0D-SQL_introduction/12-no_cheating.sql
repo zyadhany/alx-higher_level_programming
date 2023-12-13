@@ -1,2 +1,2 @@
 -- Get all DB of server.
-DROP DATABASE IF EXISTS hbtn_0c_0;
+UPDATE second_table SET score=10 WHERE name="BOB";

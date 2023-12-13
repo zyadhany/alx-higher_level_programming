@@ -1,2 +1,2 @@
 -- Get all DB of server.
-DROP DATABASE IF EXISTS hbtn_0c_0;
+DELETE FROM second_table WHERE score < 6;
