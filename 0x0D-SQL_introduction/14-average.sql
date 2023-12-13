@@ -1,2 +1,2 @@
 -- Get all DB of server.
-DROP DATABASE IF EXISTS hbtn_0c_0;
+SELECT AVG(score) AS average FROM second_table;
