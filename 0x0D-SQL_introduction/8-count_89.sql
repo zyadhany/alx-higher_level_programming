@@ -1,2 +1,2 @@
 -- Get all DB of server.
-DROP DATABASE IF EXISTS hbtn_0c_0;
+SELECT COUNT(*) FROM first_table WHERE id=89
