@@ -1,5 +1,6 @@
 -- Get all DB of server.
-SELECT city, AVG(value) AS avg_temp FROM temperatures 
-WHERE month=7 or month=8
-GROUP BY city ORDER BY avg_temp DESC
-LIMIT 3;
+
+SELECT title, SUM(tv_show_ratings.rate) 'rating' FROM tv_shows
+LEFT JOIN tv_show_ratings ON tv_show_ratings.show_id = tv_shows.id
+GROUP BY title
+ORDER BY rating DESC;
