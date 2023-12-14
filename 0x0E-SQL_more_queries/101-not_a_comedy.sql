@@ -1,2 +1,9 @@
 -- Get all DB of server.
-SELECT city, AVG(value) AS avg_temp FROM temperatures GROUP BY city ORDER BY avg_temp DESC;
+
+SELECT title FROM tv_shows WHERE title NOT IN (
+SELECT title FROM tv_shows
+LEFT JOIN tv_show_genres ON tv_genres.id = tv_show_genres.genre_id
+LEFT JOIN tv_shows ON tv_show_genres.show_id = tv_shows.id
+WHERE tv_genres.name = 'Comedy')
+GROUP BY title
+ORDER BY title ASC;
