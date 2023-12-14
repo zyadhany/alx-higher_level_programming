@@ -1,2 +1,4 @@
 -- Get all DB of server.
-SELECT COUNT(*) FROM first_table WHERE id=89
+SELECT * FROM cities WHERE state_id IN (
+    SELECT id FROM state WHERE name="California"
+) ORDER BY id;
