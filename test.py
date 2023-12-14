@@ -1,12 +1,12 @@
 n, k = map(int, input().split())
 arr = list(map(int, input().split()))
+summ=0
+i=0
+while(i<n):
+ 
+    if(arr[i]<=k):
+        summ+=1
 
+    i+=1
 
-#Write your code
-
-summ = 0
-
-for i in arr:
-    summ += (i <= k)
-
-print(summ)
+print(sum)
