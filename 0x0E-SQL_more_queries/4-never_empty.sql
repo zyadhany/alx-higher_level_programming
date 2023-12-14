@@ -1,5 +1,5 @@
 -- Get all DB of server.
-CREATE TABLE IF NOT EXISTS `first_table`(
-    `id` INT,
-    `name` VARCHAR(256)
-    );
+CREATE TABLE if NOT EXISTS id_not_null (
+    id INT NOT DEFAULT 1,
+    name VARCHAR(256)
+);
