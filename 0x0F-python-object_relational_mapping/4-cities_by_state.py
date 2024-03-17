@@ -14,8 +14,6 @@ if __name__ == "__main__":
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states")
-    state = cur.fetchall()
     cur.execute("""SELECT cities.id, cities.name, states.name AS state_name
                     FROM cities
                     INNER JOIN states ON cities.state_id = states.id;
