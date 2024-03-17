@@ -6,17 +6,17 @@ USER = sys.argv[1]
 PASS = sys.argv[2]
 DB = sys.argv[3]
 
+if __name__ == "__main__":
+    db = MySQLdb.connect(host='localhost', user=USER, passwd=PASS, db=DB, port=3306)
 
-db = MySQLdb.connect(host='localhost', user=USER, passwd=PASS, db=DB, port=3306)
+    cur = db.cursor()
 
-cur = db.cursor()
+    cur.execute("SELECT * FROM states")
 
-cur.execute("SELECT * FROM states")
+    results = cur.fetchall()
 
-results = cur.fetchall()
+    for row in results:
+        print(row)
 
-for row in results:
-    print(row)
-
-cur.close()
-db.close()
+    cur.close()
+    db.close()
