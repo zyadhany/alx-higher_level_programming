@@ -7,7 +7,7 @@ PASS = sys.argv[2]
 DB = sys.argv[3]
 
 
-db = MySQLdb.connect(host='localhost', user=USER, passwd=PASS, db=DB)
+db = MySQLdb.connect(host='localhost', user=USER, passwd=PASS, db=DB, port=3306)
 
 cur = db.cursor()
 
