@@ -16,5 +16,8 @@ if __name__ == "__main__":
     session = Session()
 
     res = session.query(State).all()
-
-    print(f"{res[0].id}: {res[0].name}")
+    
+    if (len(res)):
+        print(f"{res[0].id}: {res[0].name}")
+    else:
+        print()
