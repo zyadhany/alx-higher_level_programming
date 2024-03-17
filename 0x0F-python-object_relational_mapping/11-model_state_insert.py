@@ -17,6 +17,6 @@ if __name__ == "__main__":
 
     new = State(name='protsaid')
     session.add(new)
-    res = session.query(State).filter(State.name=='protsaid').first()
+    res = session.query(State).filter(State.name == 'protsaid').first()
     print(res.id)
     session.commit()
