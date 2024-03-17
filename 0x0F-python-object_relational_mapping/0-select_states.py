@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""  list all element of table state """
 import MySQLdb
 import sys
 
@@ -7,7 +8,8 @@ PASS = sys.argv[2]
 DB = sys.argv[3]
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(host='localhost', user=USER, passwd=PASS, db=DB, port=3306)
+    db = MySQLdb.connect(host='localhost', user=USER,
+                         passwd=PASS, db=DB, port=3306)
 
     cur = db.cursor()
 
