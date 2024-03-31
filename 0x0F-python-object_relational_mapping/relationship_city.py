@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """  state model """
-from model_state import Base, State
+from relationship_state import Base, State
 from sqlalchemy import Column, Integer, String, MetaData, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
