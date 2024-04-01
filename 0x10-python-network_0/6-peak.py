@@ -29,4 +29,4 @@ def find_peak(X):
         else:
             r = at - 1
 
-    return X[l]
+    return X[left]
