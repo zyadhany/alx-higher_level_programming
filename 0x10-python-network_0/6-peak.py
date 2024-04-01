@@ -9,18 +9,21 @@ def find_peak(X):
     if not X or len(X) == 0:
         return (None)
 
-    l = 0
+    left = 0
     r = len(X) - 1
 
-    while l < r:
-        at = (l + r) // 2
+    while left < r:
+        at = (left + r) // 2
 
-        if X[at] <= X[l]:
+        if r == left + 1:
+            return max(X[left], X[r])
+
+        if X[at] <= X[left]:
             r = at
         elif X[at] <= X[r]:
-            l = at
+            left = at
         elif X[at] >= X[at - 1]:
-            l = at
+            left = at
         elif X[at] >= X[at + 1]:
             r = at
         else:
