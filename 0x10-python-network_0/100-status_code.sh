@@ -1,3 +1,3 @@
 #!/bin/bash
 # explain
-curl -sw "%{http_code}" $1
+curl -o ./tmp -sw "%{http_code}" $1
