@@ -1,3 +1,3 @@
 #!/bin/bash
 # explain
-curl -sI ALLOW $1 -L
+curl -sX DELETE $1 -L
