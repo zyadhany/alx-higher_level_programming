@@ -1,3 +1,3 @@
 #!/bin/bash
 # explain
-curl -o ./tmp -sw "%{http_code}" $1
+curl -sX POST $1 -H "Content-Type: application/json" -d @$2 -L
